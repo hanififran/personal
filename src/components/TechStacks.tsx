@@ -29,8 +29,8 @@ const TechStacks = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <p className="font-bold">Languages, Frameworks, Tools, Libraries</p>
-      <div className="flex justify-between w-[calc(100dvh-12rem)] overflow-auto gap-2 mt-5">
+      <p className="title">Languages, Frameworks, Tools, Libraries</p>
+      <div className="flex justify-between w-[450px] lg:w-[calc(100dvh-12rem)] gap-2 mt-5">
         <ScrollVelocity speed={40}>
           {stacks.map(({ icon, label }, idx) => (
             <div

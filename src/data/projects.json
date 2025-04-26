@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "title": "Mobile Application Detection Green Bean Using Android",
+    "description": "Application to determine the quality of the coffee bean mobile based using Android. Inside this application will be loaded a machine learning model with a base of object detection. For the machine learning implementation writer use a TensorFlow library and Convolutional Neural Network (CNN) for the model architecture, and then this application worked on the Flutter framework with dart-based programming language",
+    "image": "BeanApp",
+    "tools": "Flutter, Google Colab, SSD MobileNet, Object Detection"
+  },
+  {
+    "id": "2",
+    "title": "Website Application Sell and Buy ‘Hewan Kurban’",
+    "description": "This application written with PHP and MySQL database with CodeIgniter framework. This app have 2 role, which is buyer and seller, the app consist of 6 major features. Such as sign up, sign in, edit user profile, dashboard for seller, export file data transaction, and buy qurban.",
+    "image": "KurbanApp",
+    "tools": "CodeIgniter, PHP, MySQL"
+  },
+  {
+    "id": "3",
+    "title": "RPG game ‘MUSA’",
+    "description": "Moses or Musa is one of the prophet in Islam, is an important prophet and messenger of God and is the most frequently mentioned individual in the Quran, with his name being mentioned 136 times and his life being narrated and recounted more than that of any other prophet. To remember of his story, writer creating RPG game which is called ‘MUSA’ This game is build with RPG Maker and the player design is made from template.",
+    "image": "MusaApp",
+    "tools": "RPGMaker"
+  },
+  {
+    "id": "4",
+    "title": "Pungut",
+    "description": "This game teaches people to dispose of trash in its place. This game begins with a person in an area where he has to pick up rubbish according to a predetermined time duration. This game is build with Unity and the object design is being made by Blender. Logic of this game is using C#. This game teaches people to dispose of trash in its place. This game begins with a person in an area where he has to pick up rubbish according to a predetermined time duration.",
+    "image": "PungutApp",
+    "tools": "Unity, C#, Blender"
+  },
+  {
+    "id": "5",
+    "title": "Image Classification of Fruits",
+    "description": "This project is to classificate an object, where the object is banana, apple, orange, or mixed. Classification is being made using SVM and CNN. This project I made when i was in 3rd grade in college. This image classification is written in google colab and google colab have base programming language is python, the dataset contain of 4 class, which is apple, banana, orange, and mixed. The method of this image classification will using Convolutional Neural Network and SVM.",
+    "image": "FruitApp",
+    "tools": "Python, Google Colab"
+  }
+]
