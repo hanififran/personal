@@ -19,9 +19,9 @@ function App() {
         sparkCount={8}
         duration={400}
       >
-        <div className="my-12 w-full">
+        <div className="my-12 w-full px-12">
           <div className="flex justify-center items-center">
-            <div className="flex flex-col justify-center items-center w-full mx-12 lg:mx-0 lg:w-1/2 gap-5">
+            <div className="flex flex-col justify-center items-center w-full lg:w-1/2 gap-5">
               <Summary />
               <Separator />
               <ListItem data={experiences} />

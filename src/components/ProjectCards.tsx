@@ -76,7 +76,7 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
         </div>
       </div>
       <div
-        className="w-full h-[350px] lg:h-[250px] perspective"
+        className="w-full h-[450px] lg:h-[250px] perspective"
         onClick={() => setFlipped(!flipped)}
       >
         <div
@@ -91,11 +91,11 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
             <div className="mt-2 text-justify text-sm">
               {currentProject.description}
             </div>
-            <div className="mt-auto flex justify-between items-center pt-10">
+            <div className="mt-auto flex flex-col lg:flex-row gap-2 justify-between items-center pt-10">
               <p className="title text-sm">{currentProject.tools}</p>
-              <button className="border rounded-lg px-4 py-1 text-sm">
+              {/* <button className="border rounded-lg px-4 py-1 text-sm">
                 See Project
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
             />
           </div>
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 }
