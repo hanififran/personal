@@ -28,12 +28,7 @@ function App() {
               <Separator />
               <ListItem data={educations} />
               <Separator />
-              <div className="flex flex-col justify-center items-center w-full">
-                <p className="font-bold">Languages, Frameworks, Tools, Libraries</p>
-                <div className="flex justify-between w-[calc(100dvh-12rem)] overflow-auto gap-2 mt-5">
-                  <TechStacks />
-                </div>
-              </div>
+              <TechStacks />
               <div className="flex self-end items-end mt-5 mb-1 text-slate-600 text-sm font-semibold">
                 Hanif @2025
               </div>

@@ -28,17 +28,22 @@ const TechStacks = () => {
   ];
 
   return (
-    <ScrollVelocity speed={40}>
-      {stacks.map(({ icon, label }, idx) => (
-        <div
-          key={idx}
-          className="flex gap-2 items-center shrink-0 border px-3 py-1 rounded-md shadow-sm bg-white"
-        >
-          {React.cloneElement(icon, { className: "text-2xl" })}
-          <p className="font-bold text-sm whitespace-nowrap">{label}</p>
-        </div>
-      ))}
-    </ScrollVelocity>
+    <div className="flex flex-col justify-center items-center w-full">
+      <p className="font-bold">Languages, Frameworks, Tools, Libraries</p>
+      <div className="flex justify-between w-[calc(100dvh-12rem)] overflow-auto gap-2 mt-5">
+        <ScrollVelocity speed={40}>
+          {stacks.map(({ icon, label }, idx) => (
+            <div
+              key={idx}
+              className="flex gap-2 items-center shrink-0 border px-3 py-1 rounded-md shadow-sm bg-white"
+            >
+              {React.cloneElement(icon, { className: "text-2xl" })}
+              <p className="font-bold text-sm whitespace-nowrap">{label}</p>
+            </div>
+          ))}
+        </ScrollVelocity>
+      </div>
+    </div>
   );
 };
 
