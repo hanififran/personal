@@ -15,7 +15,7 @@ const ListItem = ({ data }: ExperiencesProps) => {
           <p className="text-sm">{item.role}</p>
           {item.description.map((item, idx) => (
             <ul
-              className="list-disc ml-2 lg:ml-12 text-justify text-sm mt-2"
+              className="list-disc ml-4 lg:ml-12 text-balance text-sm mt-2"
               key={idx}
             >
               <li>{item}</li>
