@@ -8,6 +8,7 @@ import ClickSpark from "./components/animation/ClickSpark";
 import TechStacks from "./components/TechStacks";
 import ProjectCards from "./components/ProjectCards";
 import Contact from "./components/Contact";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           </div>
         </div>
       </ClickSpark>
+      <Analytics />
     </>
   );
 }
