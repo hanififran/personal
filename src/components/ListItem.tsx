@@ -14,12 +14,12 @@ const ListItem = ({ data }: ExperiencesProps) => {
           <p className="title">{item.company}</p>
           <p className="text-sm">{item.role}</p>
           {item.description.map((item, idx) => (
-            <ul
-              className="list-disc ml-4 lg:ml-12 text-balance text-sm mt-2"
+            <p
+              className="text-justify text-sm/6 mt-2"
               key={idx}
             >
-              <li>{item}</li>
-            </ul>
+             {item}
+            </p>
           ))}
         </div>
       ))}

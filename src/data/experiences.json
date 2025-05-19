@@ -3,34 +3,29 @@
     "company": "Esco - Bintan, Indonesia",
     "role": "Web Developer (November 2023 - present)",
     "description": [
-      "Developed and maintained multiple company websites using Laravel, Vue, and CodeIgniter.",
-      "Build ERP fronted using React and Typescript, integrated with Frappe API.",
-      "Contributed to major websites: escolifesciences.com, esco-medical.com, escohealthcare.com."
+      "Currently working on MES at Esco Bintan Indonesia, developing the front-end for Production Planners and Operators using React and TypeScript. The system replaces Hydra and is expected to enhance user experience by 50%. Optimized performance for large data sets by implementing virtualization combined with infinite scrolling using TanStack libraries and other performance-enhancing techniques.",
+      "Also contributed to building a CMS for Esco’s main website (escolifesciences) using Laravel and Vue to enable dynamic content management and eliminate the need for direct database access. Assisted in improving other Esco platforms, including Esco Career, Esco Medical, and Esco Aster, using various tools such as CodeIgniter and MySQL, in collaboration with cross-functional teams."
     ]
   },
   {
     "company": "Freelancer – Remote",
     "role": "Software Developer (February 2024 - present)",
     "description": [
-      "Developed and maintained a retail inventory management system using CodeIgniter and MySQL.",
-      "Implemented modules including cashier POS, profit calculation, and petty cash tracking."
+      "Implemented modules including cashier POS, profit calculation, and petty cash tracking using CodeIgniter and MySQL."
     ]
   },
   {
     "company": "LearningX – Remote",
     "role": "Web Development Mentor (February 2023 – January 2024)",
     "description": [
-      "Mentored 100+ high school students in web development using Flask, Python, Jinja, Git, Web Scraping method, and Glitch.",
-      "Created and managed interactive learning materials and hand-on projects."
+      "Taught vocational high school students website development from the ground up to an intermediate level using tools such as Flask, Python, and JavaScript. Introduced web-scraping techniques to deepen their understanding of data collection and analysis within the context of web development. Also mentored students on best practices in version control using Git, and guided them in using Jinja templating to build dynamic and responsive web applications."
     ]
   },
   {
     "company": "GITS.ID – Bandung, Indonesia",
     "role": "Software Engineer Internship (February 2022 – August 2022)",
     "description": [
-      "Analyzed business processes for GITS Project Profitability System.",
-      "Collected requirements through interviews and created Functional Specification Documents (FSD).",
-      "Built backend services using AdonisJS and PostgreSQL, combined with Postman as API testing."
+      "Analyzed business processes within the GITS Project Profitability System to identify areas for improved efficiency and performance. Conducted requirement-gathering sessions through interviews with multiple divisions to ensure seamless system integration. Developed applications using the AdonisJS framework and PostgreSQL database to support operational needs. Contributed to enhancing the overall system, resulting in increased productivity and more streamlined workflows."
     ]
   }
 ]

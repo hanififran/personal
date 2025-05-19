@@ -14,7 +14,7 @@ const Contact = () => {
       icon: <FaLinkedin />,
       label: "hanif-ifran-a",
       type: "linkedin",
-      href: "https://linkedin.com/in/hanif-ifran-a-18684528a",
+      href: "https://www.linkedin.com/in/hanif-ifran-antoni-18684528a/",
     },
     {
       icon: <FaGithub />,
@@ -33,19 +33,11 @@ const Contact = () => {
   return (
     <div className="flex flex-col self-start">
       <p className="title">Contact Me</p>
-      <div className="mt-2">
+      <div className="mt-2 flex gap-2 ">
         {contacts.map((contact, index) => (
-          <div key={index} className="flex items-center gap-2">
+          <a  href={contact.href} target="_blank" key={index} className="text-2xl">
             {contact.icon}
-            <a
-              href={contact.href}
-              className="text-blue-500 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {contact.label}
-            </a>
-          </div>
+          </a>
         ))}
       </div>
     </div>

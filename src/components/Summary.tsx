@@ -10,7 +10,7 @@ const Summary = () => {
       />
       <div className="flex flex-col gap-2">
         <p className="title mt-5 lg:mt-2">Hanif Ifran Antoni</p>
-        <p className="text-justify text-sm">
+        <p className="text-justify text-sm/6">
           Passionate Software Developer with 2+ years of experience in
           full-stack web development. Proven expertise in building ERP systems
           using React (TypeScript) for frontend and Laravel/Frappe for backend.
