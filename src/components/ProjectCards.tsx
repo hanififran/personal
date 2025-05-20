@@ -32,19 +32,15 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
 
   const handleNext = () => {
     if (currentIndex < data.length - 1) {
-      setFlipped(false);
-      setTimeout(() => {
-        setCurrentIndex((prev) => prev + 1);
-      }, 300);
+      setFlipped(false)
+      setCurrentIndex((prev) => prev + 1);
     }
   };
 
   const handleBack = () => {
     if (currentIndex > 0) {
       setFlipped(false);
-      setTimeout(() => {
-        setCurrentIndex((prev) => prev - 1);
-      }, 300);
+      setCurrentIndex((prev) => prev - 1);
     }
   };
 
@@ -55,9 +51,12 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
           <button
             onClick={handleBack}
             type="button"
-            className={`title text-sm text-gray-600 hover:text-black ${
-              currentIndex == 0 && `text-white hover:text-white`
-            }`}
+            disabled={currentIndex === 0}
+            className={`title text-sm hover:text-black ${
+              currentIndex === 0
+                ? "text-white dark:text-black opacity-0 pointer-events-none"
+                : "text-black dark:text-white"
+            }`}            
           >
             Back
           </button>
@@ -67,9 +66,12 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
           <button
             onClick={handleNext}
             type="button"
-            className={`title text-sm text-gray-600 hover:text-black ${
-              currentIndex >= data.length - 1 && `text-white hover:text-white`
-            }`}
+            disabled={currentIndex >= data.length - 1}
+            className={`title text-sm hover:text-black ${
+              currentIndex >= data.length - 1
+                ? "text-white dark:text-black opacity-0 pointer-events-none"
+                : "text-black dark:text-white"
+            }`}    
           >
             Next
           </button>
