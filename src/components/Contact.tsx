@@ -32,10 +32,10 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col self-start">
-      <p className="title">Contact Me</p>
+      <p className="title dark:text-white">Contact Me</p>
       <div className="mt-2 flex gap-2 ">
         {contacts.map((contact, index) => (
-          <a  href={contact.href} target="_blank" key={index} className="text-2xl">
+          <a  href={contact.href} target="_blank" key={index} className="text-2xl dark:text-white">
             {contact.icon}
           </a>
         ))}

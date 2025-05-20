@@ -50,7 +50,7 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
 
   return (
     <div className="flex flex-col self-start gap-2 w-full">
-      <div className="border p-2 rounded-lg">
+      <div className="border dark:border-white p-2 rounded-lg">
         <div className="flex gap-2 justify-between items-center mx-2">
           <button
             onClick={handleBack}
@@ -61,7 +61,7 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
           >
             Back
           </button>
-          <button className="title text-sm hover:text-black">
+          <button className="title text-sm hover:text-black dark:text-white">
             Project {currentProject.id}
           </button>
           <button
@@ -85,23 +85,23 @@ export default function ProjectCards({ data }: ProjectCardsProps) {
           }`}
         >
           {/* Front Side */}
-          <div className="flex flex-col justify-between absolute w-full h-full backface-hidden bg-white border rounded-lg p-4">
-            <p className="title">{currentProject.title}</p>
+          <div className="dark:bg-black flex flex-col justify-between absolute w-full h-full backface-hidden bg-white border dark:border-white rounded-lg p-4">
+            <p className="title dark:text-white">{currentProject.title}</p>
             <Separator />
-            <div className="mt-2 text-justify text-sm/6">
+            <div className="mt-2 text-justify text-sm/6 dark:text-white">
               {currentProject.description}
             </div>
             <div className="mt-auto flex flex-col lg:flex-row gap-2 justify-center lg:justify-between items-center pt-10">
-              <p className="title text-sm">{currentProject.tools}</p>
+              <p className="title text-sm dark:text-white">{currentProject.tools}</p>
               <div className="flex gap-2 items-center">
-              <p className="text-sm text-nowrap">Click Anywhere in this card to flip </p>
-              <p className="text-xl">↺</p>
+              <p className="text-sm text-nowrap dark:text-white">Click Anywhere in this card to flip </p>
+              <p className="text-xl dark:text-white">↺</p>
               </div>
             </div>
           </div>
 
           {/* Back Side */}
-          <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white border rounded-lg p-4 flex items-center justify-center">
+          <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-white border dark:bg-black dark:border-white rounded-lg p-4 flex items-center justify-center">
             <img
               src={`${imageMap[currentProject.image]}`}
               alt="Project Screenshot"

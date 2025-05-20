@@ -11,11 +11,11 @@ const ListItem = ({ data }: ExperiencesProps) => {
     <div className="flex flex-col self-start gap-5">
       {data.map((item, idx) => (
         <div className="grid grid-cols-1" key={idx}>
-          <p className="title">{item.company}</p>
-          <p className="text-sm">{item.role}</p>
+          <p className="title dark:text-white">{item.company}</p>
+          <p className="text-sm dark:text-white">{item.role}</p>
           {item.description.map((item, idx) => (
             <p
-              className="text-justify text-sm/6 mt-2"
+              className="text-justify text-sm/6 mt-2 dark:text-white"
               key={idx}
             >
              {item}

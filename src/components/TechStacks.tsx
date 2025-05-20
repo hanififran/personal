@@ -29,16 +29,16 @@ const TechStacks = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <p className="title">Languages, Frameworks, Tools, Libraries</p>
+      <p className="title dark:text-white">Languages, Frameworks, Tools, Libraries</p>
       <div className="flex justify-between w-[250px] lg:w-[calc(100dvh-12rem)] gap-2 mt-5">
         <ScrollVelocity speed={40}>
           {stacks.map(({ icon, label }, idx) => (
             <div
               key={idx}
-              className="flex gap-2 items-center shrink-0 border px-3 py-1 rounded-md shadow-sm bg-white"
+              className="flex gap-2 items-center shrink-0 border dark:border-white px-3 py-1 rounded-md shadow-sm bg-white dark:bg-black"
             >
-              {React.cloneElement(icon, { className: "text-2xl" })}
-              <p className="font-bold text-sm whitespace-nowrap">{label}</p>
+              {React.cloneElement(icon, { className: "text-2xl dark:text-white" })}
+              <p className="font-bold text-sm whitespace-nowrap dark:text-white">{label}</p>
             </div>
           ))}
         </ScrollVelocity>
